@@ -14,7 +14,7 @@ export const links = [
   {
     label: "Home",
     icon: "HomeIcon",
-    href: "https://soupsswap.io/",
+    href: "/",
     calloutClass: 'rainbow',
   },
   {
@@ -40,20 +40,20 @@ export const links = [
   // {
   //   label: "POOLS",
   //   icon: "PoolIcon",
-  //   href: "",
+  //   href: "#",
   //   att: "SOON",
   // },
   {
     label: "Earning",
     icon: "TicketIcon",
     att: "SOON",
-    href: "",
+    href: "#",
   },
   {
     label: "NFT Marketplace",
     icon: "NftIcon",
     att: "iconHot",
-    href: "",
+    href: "#",
   },
   {
     label: "FLAN Gallery",
@@ -61,37 +61,37 @@ export const links = [
     // icon: "FlanIcon",
     // calloutClass: 'rainbow',
     att: "SOON",
-    href: "",
+    href: "#",
   },
   {
     label: "Sport NFT",
     icon: "SpotIcon",
     // target: "_blank",
-    href: "",
+    href: "#",
   },
   {
     label: "Launchpad",
     icon: "LaunchpadIcon",
     att: "SOON",
-    href: "",
+    href: "#",
   },
   {
     label: "Gamification",
     icon: "GamificationIcon",
     att: "iconHot",
-    href: "",
+    href: "#",
   }, 
   {
     label: "ETH2.0",
     icon: "ETH2Icon",
     att: "SOON",
-    href: "",
+    href: "#",
   },
   {
     label: "Info",
     icon: "InfoIcon",
     att: "SOON",
-    href: "", 
+    href: "#", 
   },
   {
     label: "Contact",
@@ -99,15 +99,15 @@ export const links = [
     items: [ 
       {
         label: "Twitter",
-        href: "",
+        href: "#",
       },
       {
         label: "Medium",
-        href: "",
+        href: "#",
       },
       {
         label: "Telegram",
-        href: "",
+        href: "#",
       },
     ],
   },

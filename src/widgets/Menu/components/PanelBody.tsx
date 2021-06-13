@@ -55,6 +55,7 @@ const PanelBody: React.FC<Props> = ({ isPushed, pushNav, isMobile, links }) => {
         if (entry.items) {
           const itemsMatchIndex = entry.items.findIndex((item) => item.href === location.pathname);
           const initialOpenState = entry.initialOpenState === true ? entry.initialOpenState : itemsMatchIndex >= 0;
+          const itemActive = entry.items.some((item) => item.href === location.pathname)
 
           return (
             <Accordion
@@ -65,11 +66,12 @@ const PanelBody: React.FC<Props> = ({ isPushed, pushNav, isMobile, links }) => {
               label={entry.label}
               initialOpenState={initialOpenState}
               className={calloutClass}
-              isActive={entry.items.some((item) => item.href === location.pathname)}
+              isActive={itemActive}
             >
               {isPushed &&
-                entry.items.map((item) => (
-                  <MenuEntry key={item.href} secondary isActive={item.href === location.pathname} onClick={handleClick}>
+                entry.items.map((item, index) => ( 
+                  // eslint-disable-next-line react/no-array-index-key
+                  <MenuEntry key={`children-${item.href}-${index}`} secondary isActive={item.href === location.pathname} onClick={handleClick}>
                     <MenuLink href={item.href} target={item.target}>
                       {item.label}
                     </MenuLink>
