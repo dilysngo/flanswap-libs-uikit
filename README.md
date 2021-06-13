@@ -8,7 +8,7 @@ FlanSwap UIkit is a set of React components and hooks used to build pages on Fla
 
 ## Install 
 
-`yarn add FlanSwap-libs-uikit`
+`yarn add flanswap-libs-uikit`
 
 ## Setup
 
