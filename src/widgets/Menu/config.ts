@@ -11,6 +11,14 @@
  */
 
 export const links = [
+  // {
+  //   label: "POOLS",
+  //   icon: "PoolIcon",
+  //   href: "#",
+  //   att: "SOON",
+  //   initialOpenState: true,
+  //   calloutClass: 'rainbow',
+  // },
   {
     label: "Home",
     icon: "HomeIcon",
@@ -32,17 +40,6 @@ export const links = [
       },
     ],
   },
-  // {
-  //   label: "LIQUYDITY",
-  //   icon: "FarmIcon",
-  //   href: "/pool",
-  // },
-  // {
-  //   label: "POOLS",
-  //   icon: "PoolIcon",
-  //   href: "#",
-  //   att: "SOON",
-  // },
   {
     label: "Earning",
     icon: "TicketIcon",
@@ -57,16 +54,13 @@ export const links = [
   },
   {
     label: "FLAN Gallery",
-    icon: "NftIcon",
-    // icon: "FlanIcon",
-    // calloutClass: 'rainbow',
+    icon: "FlanIcon",
     att: "SOON",
     href: "#",
   },
   {
     label: "Sport NFT",
     icon: "SpotIcon",
-    // target: "_blank",
     href: "#",
   },
   {

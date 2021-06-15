@@ -13,7 +13,7 @@ interface Props extends PanelProps, PushedProps {
   isMobile: boolean;
 }
 
-const Icons = (IconModule as unknown) as { [key: string]: React.FC<SvgProps> };
+const ImportIcons = (IconModule as unknown) as { [key: string]: React.FC<SvgProps> };
 
 const Container = styled.div`
   display: flex;
@@ -48,7 +48,8 @@ const PanelBody: React.FC<Props> = ({ isPushed, pushNav, isMobile, links }) => {
   return (
     <Container>
       {links.map((entry) => {
-        const Icon = Icons[entry.icon];
+        // const isImg = entry.icon.endsWith('.png') || entry.icon.endsWith('.jpg');
+        const Icon = ImportIcons[entry.icon];
         const iconElement = <Icon width="24px" mr="8px" />;
         const calloutClass = entry.calloutClass ? entry.calloutClass : undefined;
 
@@ -77,7 +78,7 @@ const PanelBody: React.FC<Props> = ({ isPushed, pushNav, isMobile, links }) => {
                     </MenuLink>
                   </MenuEntry>
                 ))}
-            </Accordion>
+            </Accordion> 
           ); 
         }
         return (

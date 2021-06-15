@@ -56,7 +56,7 @@ const Logo: React.FC<Props> = ({ isMobile, isPushed, togglePush, isDark, href })
   const isAbsoluteUrl = href.startsWith("http");
   const innerLogo = ( 
     <BoxImage isMobile={isMobile}>
-      <img src="/images/logo/logo.svg" alt="logo" width={140} />
+      <img src="/images/logo/logo-full.svg" alt="logo" width={140} />
       {/* {!isMobile && <img src="/images/logo/logo-text.png" alt="logo" width={120} />} */}
  
       {/* <img src={logoPng} alt="logo" width={140} /> */}
