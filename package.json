@@ -8,7 +8,7 @@
   "files": [
     "dist"
   ],
-  "repository": "https://github.com/dilysbi/flanswap-libs-uikit.git",
+  "repository": "https://github.com/dilysngo/flanswap-libs-uikit.git",
   "license": "MIT",
   "scripts": {
     "build:mac": "rm -rf ./dist && rollup -c && tsc -d --emitDeclarationOnly --declarationDir dist",
